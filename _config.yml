@@ -3,6 +3,10 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
+# Only if your site type is GitHub Project sites and doesn't have a custom domain,
+# change below value to '/projectname'.
+baseurl: '/kazoryah.github.io'
+
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
@@ -21,12 +25,11 @@ tagline: A text-focused Jekyll theme # it will display as the subtitle
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
-# Fill in the protocol & hostname for your site.
-# E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
+url: 'https://kazoryah.github.io'
 
 github:
-  username: github_username # change to your GitHub username
+  username: Kazoryah             # change to your github username
 
 twitter:
   username: twitter_username # change to your Twitter username
