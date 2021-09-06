@@ -11,6 +11,11 @@ layout: page
     {{ page.title }}
     <span class="lead text-muted ps-2">{{ page.posts | size }}</span>
   </h1>
+  {% for desc in site.category_desc %}
+  <p>
+     {{ desc }}
+  </p>
+  {% endfor %}
 
   <ul class="content ps-0">
     {% for post in page.posts %}
