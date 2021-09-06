@@ -2,7 +2,6 @@
 title: Lightning Talk - 04.05.2021
 categories: [RDI, Lightning Talks]
 tags: [RDI, LRDE, LT]
-permalink: /lightning_talk/3
 ---
 
 Keywords: Mathematical Morphology, Deep Learning
