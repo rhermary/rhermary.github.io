@@ -228,4 +228,14 @@ jekyll-archives:
 
 
 category_desc:
-  seminar: "seminar description TODO"
+  seminar: "Seminars are meetings between LRDE researchers where we all present
+  the subject we are working on and our advancements"
+  lrde: "The LRDE is the laboratory where I work on my research subject,
+  supervised by researchers"
+  rdi: "RDI is the name of the curriculum I follow in which I have courses
+  related to research"
+  biblio: "Course about scientific papers, conferences, references..."
+  coder: "Course about the research process and paper writing methodology"
+  lightning talks: "Short presentations to expose advancements on my research
+  subject"
+  asie: ""
