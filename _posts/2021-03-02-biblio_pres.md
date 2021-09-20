@@ -6,7 +6,7 @@ tags: [RDI, LRDE, BIBLIO]
 
 Keywords: Deep Learning, Pooling Layer
 
-The PDF version can be found [here](https://drive.google.com/file/d/1kMGL4angQMdNcqPYSg6ZRYZC5duhZ42A/view?usp=sharing)
+The PDF version can be found [here](https://drive.google.com/uc?print=false&id=1kMGL4angQMdNcqPYSg6ZRYZC5duhZ42A)
 
 ![](https://drive.google.com/uc?id=1OU9q4g1jhInxpdlTaq2zAw7srSeFKvW7)
 ![](https://drive.google.com/uc?id=1Uanuj_mZ1M9XcmtQbx4UiS_6z-o32Dz9)

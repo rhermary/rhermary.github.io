@@ -1,12 +1,13 @@
 ---
 title: Seminar - 15.07.2021 - Slides
-categories: [RDI, Seminar]
+categories: [LRDE, Seminar]
 tags: [RDI, LRDE]
 ---
 
 Keywords: Mathematical Morphology, Deep Learning
 
-The PDF version can be found [here](https://drive.google.com/file/d/1LBzVwr92NqGjoustpTaSRvnyf-x2umyp/view?usp=sharing)
+The PDF version can be found [here](https://drive.google.com/uc?print=false&id=1LBzVwr92NqGjoustpTaSRvnyf-x2umyp)
+
 
 ![](https://drive.google.com/uc?id=1rIeFk8AX1PIuSKXt_YSEO_QnZFFCqJi2)
 ![](https://drive.google.com/uc?id=10vGL44eSyo3seiYRcpX738keCKsW54Vb)
