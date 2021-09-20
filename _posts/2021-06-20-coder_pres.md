@@ -6,7 +6,7 @@ tags: [RDI, LRDE, CODER]
 
 Keywords: Deep Learning, Ordinary Differential Equations, ODE, Neural Ordinary Differential Equations
 
-The PDF version can be found [here](https://drive.google.com/file/d/1A8eTLY6Ut7FYlK4AvuQ7rYSgr4MT6wSH/view?usp=sharing)
+The PDF version can be found [here](https://drive.google.com/uc?print=false&id=1A8eTLY6Ut7FYlK4AvuQ7rYSgr4MT6wSH)
 
 
 ![](https://drive.google.com/uc?id=1CDFHPf1r3QcO1k3Xo-4XbUzOkZnFG2Tl)

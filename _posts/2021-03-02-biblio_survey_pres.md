@@ -6,7 +6,7 @@ tags: [RDI, LRDE, BIBLIO]
 
 Keywords: Deep Learning, Pooling Layer, Survey
 
-The PDF version can be found [here](https://drive.google.com/file/d/1iAZs3ZuDmH_-ib_HEFn90sQHD925pOz8/view?usp=sharing)
+The PDF version can be found [here](https://drive.google.com/uc?print=false&id=1iAZs3ZuDmH_-ib_HEFn90sQHD925pOz8)
 
 ![](https://drive.google.com/uc?id=1DKPdzg77ASf9MyYs0Iod7OMsFOClo22S)
 ![](https://drive.google.com/uc?id=1SkQmZHrE72yeCtfodUS_hY7DIA1J51Y9)
