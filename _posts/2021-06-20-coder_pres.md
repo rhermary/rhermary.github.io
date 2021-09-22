@@ -1,10 +1,12 @@
 ---
-title: CODER - Paper Presentation
+title: Paper Presentation - Neural Ordinary Differential Equations
 categories: [RDI, CODER]
 tags: [RDI, LRDE, CODER]
 ---
 
-Keywords: Deep Learning, Ordinary Differential Equations, ODE, Neural Ordinary Differential Equations
+```
+Deep Learning, Ordinary Differential Equations, ODE, Neural Ordinary Differential Equations
+```
 
 The PDF version can be found [here](https://drive.google.com/uc?print=false&id=1A8eTLY6Ut7FYlK4AvuQ7rYSgr4MT6wSH)
 

@@ -4,7 +4,9 @@ categories: [LRDE, Lightning Talks]
 tags: [RDI, LRDE, LT]
 ---
 
-Keywords: Mathematical Morphology, Deep Learning
+```
+Mathematical Morphology, Deep Learning
+```
 
 The PDF version can be found [here](https://drive.google.com/uc?print=false&id=1-wrAkw9IgxNZbM0dZAXYvoZEPJ4MaJ0K)
 

@@ -1,10 +1,12 @@
 ---
-title: BIBLIO - Survey Presentation
+title: Survey Presentation - Pooling Layers
 categories: [RDI, BIBLIO]
 tags: [RDI, LRDE, BIBLIO]
 ---
 
-Keywords: Deep Learning, Pooling Layer, Survey
+```
+Deep Learning, Pooling Layer, Survey
+```
 
 The PDF version can be found [here](https://drive.google.com/uc?print=false&id=1iAZs3ZuDmH_-ib_HEFn90sQHD925pOz8)
 

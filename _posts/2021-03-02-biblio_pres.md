@@ -8,16 +8,10 @@ tags: [RDI, LRDE, BIBLIO]
 Deep Learning, Pooling Layer
 ```
 
-
 A short presentation on [Detail-Preserving Pooling in Deep
 Networks](https://www.semanticscholar.org/paper/Detail-Preserving-Pooling-in-Deep-Networks-Saeedan-Weber/a651aaf02be93392a628656e1ba3aa2da4ab32ce) paper, from
 Faraz Saeedan, Nicolas Weber, M. Goesele and S. Roth
 
-<embed src="https://drive.google.com/uc?print=false&id=1kMGL4angQMdNcqPYSg6ZRYZC5duhZ42A"
-class="pdfobject" type="application/pdf" style="overflow: auto; width: 100%;
-height: 700px;">
-
-<!--
 The PDF version can be found [here](https://drive.google.com/uc?print=false&id=1kMGL4angQMdNcqPYSg6ZRYZC5duhZ42A)
 
 ![](https://drive.google.com/uc?id=1OU9q4g1jhInxpdlTaq2zAw7srSeFKvW7)
@@ -41,4 +35,3 @@ The PDF version can be found [here](https://drive.google.com/uc?print=false&id=1
 ![](https://drive.google.com/uc?id=1-wPFRaUu6AkKJtljc2DAxOFNa7e-9Fe_)
 ![](https://drive.google.com/uc?id=1QBhpjgFWjpxTIPYACyvzzy26F6bcQPM2)
 ![](https://drive.google.com/uc?id=1ELKowvMRKcKGwVeGVVmxQpMIklP4lNZZ)
--->

@@ -4,7 +4,9 @@ categories: [LRDE, Seminar]
 tags: [RDI, LRDE]
 ---
 
-Keywords: Mathematical Morphology, Deep Learning
+```
+Mathematical Morphology, Deep Learning
+```
 
 The PDF version can be found [here](https://drive.google.com/uc?print=false&id=1GqVAI1DSiunpKERzUIomnSH4sxw9VmBS)
 
