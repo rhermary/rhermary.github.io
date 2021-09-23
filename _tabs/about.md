@@ -33,3 +33,8 @@ courses they are linked to, for better structuring; if you are not familiar
 with any of the categories you can browse around (there are descriptions for
 each category if you click on it) or use the search bar (I usually write keywords
 in the posts to ease this process).
+
+I only recently started to put up this site, posts are not as pretty,
+documented, and complete as they could be but I am working on it. Feel free to
+contact me if you see improvements that could be done or have questions about
+a topic.
