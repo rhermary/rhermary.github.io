@@ -22,7 +22,9 @@ An opportunity with a company or a university in Germany would be my first
 choice, and if the intership can lead to a thesis proposal that would be
 perfect, as I intend to continue on towards a PhD.
 
-You can find my resume in french [here](), and [here]() in english. The links to
+You can find my resume in french
+[here](https://drive.google.com/uc?id=16dqA7gGrVcKHDKDK0xjvb60redMWUSmx), and
+[here](https://drive.google.com/uc?id=1XfzrHREYTRNrlV2kMGCf4sQMOg4QZh7z) in english. The links to
 my LinkedIn, e-mail, etc. are at the bottom of the sidebar.
 
 ## This Site
