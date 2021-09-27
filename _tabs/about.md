@@ -40,3 +40,11 @@ I only recently started to put up this site, posts are not as pretty,
 documented, and complete as they could be but I am working on it. Feel free to
 contact me if you see improvements that could be done or have questions about
 a topic.
+
+## Worth Seeing
+
+As I am more interested in pursuing in a research oriented career, the work I
+want to put forward is the [report]({% post_url 2021-07-15-seminar_report %})
+I wrote on my past semester research project, and the [article]({% post_url 2021-09-20-jmiv %})
+I submitted to the [Journal of Mathematical Imaging and Vision](https://www.springer.com/journal/10851)
+in July (still waiting on the response).

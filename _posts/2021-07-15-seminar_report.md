@@ -8,6 +8,14 @@ tags: [RDI, LRDE]
 Mathematical Morphology, Deep Learning
 ```
 
+## Context
+
+During my last year of study and after six months of working on my research
+subject, I wrote a complete report to expose my subject, explain it as best as I
+could and describe my work.
+
+## Report 
+
 The PDF version can be found [here](https://drive.google.com/uc?print=false&id=1GqVAI1DSiunpKERzUIomnSH4sxw9VmBS)
 
 ![](https://drive.google.com/uc?id=1idnRYcufm8xsFPAMfKESfb7W43EVbNCh)
