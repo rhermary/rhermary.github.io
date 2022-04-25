@@ -1,6 +1,6 @@
 ---
 title: Paper Presentation - Detail-Preserving Pooling in Deep Networks
-categories: [RDI, BIBLIO]
+categories: [Research, Lectures & Work]
 tags: [RDI, LRDE, BIBLIO]
 ---
 

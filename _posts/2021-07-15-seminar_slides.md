@@ -1,6 +1,6 @@
 ---
 title: Seminar - 15.07.2021 - Slides
-categories: [LRDE, Seminar]
+categories: [Research, LRDE, Seminar]
 tags: [RDI, LRDE]
 ---
 
