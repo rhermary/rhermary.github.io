@@ -1,6 +1,6 @@
 ---
 title: Survey - Pooling Layers
-categories: [RDI, BIBLIO]
+categories: [Research, Lectures & Work]
 tags: [RDI, LRDE, BIBLIO]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Lightning Talk - 04.05.2021
-categories: [LRDE, Lightning Talks]
+categories: [Research, LRDE, Lightning Talks]
 tags: [RDI, LRDE, LT]
 ---
 
