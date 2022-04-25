@@ -41,14 +41,18 @@ layout: page
 
     {% for sub_category in sub_categories %}
       {% capture _category_url %}/categories/{{ sub_category | slugify | url_encode }}/{% endcapture %}
-      <h2><a href="{{ _category_url | relative_url }}" style="color:var(--heading-color); border-bottom:none;">{{sub_category}}</a></h2>
+      <h2 class="pl-lg-2">
+        <a href="{{ _category_url | relative_url }}" style="color:var(--heading-color); border-bottom:none;">
+          {{sub_category}}
+        </a>
+      </h2>
       {% for post in page.posts %}
         {% if post.categories[sub_idx2] == sub_category %}
-          <li class="d-flex justify-content-between pl-md-3 pr-md-3">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            <span class="dash flex-grow-1"></span>
-            <span class="text-muted small">{{ post.date | date: post_df }}</span>
-          </li>
+      <li class="d-flex justify-content-between pl-md-3 pr-md-3">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="dash flex-grow-1"></span>
+        <span class="text-muted small">{{ post.date | date: post_df }}</span>
+      </li>
         {% endif %}
       {% endfor %}
     {% endfor %}
@@ -56,7 +60,7 @@ layout: page
     {% for post in page.posts %}
       {% if post.categories.size == sub_idx2 %}
         {% if sub_categories.size > 0 %}
-          <h2>Others</h2>
+      <h2 class="pl-lg-2">Others</h2>
         {% endif %}
       <li class="d-flex justify-content-between pl-md-3 pr-md-3">
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
