@@ -15,26 +15,29 @@ time, I chose to join a second curriculum that would introduce me to the world
 of research, giving me the chance to have courses on research related topics,
 and a subject to work on while being supervised by teachers-researchers.
 
-I am currently searching for an end-of-studies internship, from mid-february or
-after, and for 6 months. I would be interested in joining a research team to work
-on image processing algorithms (potentially, linked with deep learning).
-An opportunity with a company or a university in Germany would be my first
-choice, and if the intership can lead to a thesis proposal that would be
-perfect, as I intend to continue on towards a PhD.
+I am currently in my end-of-studies internship, working as a machine learning
+engineer at [ZEISS Microscopy](https://www.zeiss.com/microscopy/int/home.html)
+in Munich, Germany. I am part of the team developing the algorithms and the
+structure of the [APEER](https://apeer.com/machinelearning) deep learning
+pipeline. This platform has its focus on microscopic image processing,
+proposing cloud-based solutions for the latter. In particular, they
+have an annotation tool and trainable neural network models handling partial
+annotation of the data.
 
-You can find my resume in french
+After the end of this internship, I intend to continue on towards a PhD on image
+processing and deep learning algorithms. I'd specifically love to work on
+scientific subjects, involving me to practice and improve my math and physic skills.
+
+You can find my resume in French
 [here](https://drive.google.com/uc?id=16dqA7gGrVcKHDKDK0xjvb60redMWUSmx), and
-[here](https://drive.google.com/uc?id=1XfzrHREYTRNrlV2kMGCf4sQMOg4QZh7z) in english. The links to
+[here](https://drive.google.com/uc?id=1XfzrHREYTRNrlV2kMGCf4sQMOg4QZh7z) in English. The links to
 my LinkedIn, e-mail, etc. are at the bottom of the sidebar.
 
 ## This Site
 
-I try to agregate all the work I do, it is mostly school work, projects,
-reports, presentations... A great part of the files are organized following the
-courses they are linked to, for better structuring; if you are not familiar
-with any of the categories you can browse around (there are descriptions for
-each category if you click on it) or use the search bar (I usually write keywords
-in the posts to ease this process).
+I try to aggregate all the work I do, it is mostly school work, projects,
+reports, presentations... Please browse around or use the search bar (I usually
+write keywords in the posts to ease this process).
 
 I only recently started to put up this site, posts are not as pretty,
 documented, and complete as they could be but I am working on it. Feel free to
@@ -47,4 +50,7 @@ As I am more interested in pursuing in a research oriented career, the work I
 want to put forward is the [report]({% post_url 2021-07-15-seminar_report %})
 I wrote on my past semester research project, and the [article]({% post_url 2021-09-20-jmiv %})
 I submitted to the [Journal of Mathematical Imaging and Vision](https://www.springer.com/journal/10851)
-in July (still waiting on the response).
+in July 2021. This article has been accepted and revised, the latest and final
+version of it will be on this site soon -- maybe you will find it on the
+journal's website first.
+
