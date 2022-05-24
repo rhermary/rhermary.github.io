@@ -49,8 +49,10 @@ a topic.
 As I am more interested in pursuing in a research oriented career, the work I
 want to put forward is the [report]({% post_url 2021-07-15-seminar_report %})
 I wrote on my past semester research project, and the [article]({% post_url 2021-09-20-jmiv %})
-I submitted to the [Journal of Mathematical Imaging and Vision](https://www.springer.com/journal/10851)
-in July 2021. This article has been accepted and revised, the latest and final
-version of it will be on this site soon -- maybe you will find it on the
-journal's website first.
-
+(**Learning Grayscale Mathematical Morphology with Smooth Morphological Layers**)
+that I submitted to the [Journal of Mathematical Imaging and Vision](https://www.springer.com/journal/10851)
+in July 2021. This article has been accepted and published in May 2022, it 
+can be find on the [Spinger Nature](https://link.springer.com/article/10.1007/s10851-022-01091-1?error=cookies_not_supported&code=1a3cd712-4a95-43eb-87c6-5e20380959b0)
+website and also on [Research
+Gate](https://www.researchgate.net/publication/360606987_Learning_Grayscale_Mathematical_Morphology_with_Smooth_Morphological_Layers),
+with a full access for readers with institutional subscriptions.
