@@ -4,6 +4,8 @@ icon: fas fa-info-circle
 order: 4
 ---
 
+<img src="/assets/img/profile-pic.png" style="height: 300px">
+
 ## Me
 
 Hi, I am Romain, a research student at [EPITA](https://epita.fr/en) (engineering school in computer
@@ -28,9 +30,8 @@ After the end of this internship, I intend to continue on towards a PhD on image
 processing and deep learning algorithms. I'd specifically love to work on
 scientific subjects, involving me to practice and improve my math and physic skills.
 
-You can find my resume in French
-[here](https://drive.google.com/uc?id=16dqA7gGrVcKHDKDK0xjvb60redMWUSmx), and
-[here](https://drive.google.com/uc?id=1XfzrHREYTRNrlV2kMGCf4sQMOg4QZh7z) in English. The links to
+You can find my latest resume at [this
+permalink](https://bit.ly/romain-hermary-cv). The links to
 my LinkedIn, e-mail, etc. are at the bottom of the sidebar.
 
 ## This Site
