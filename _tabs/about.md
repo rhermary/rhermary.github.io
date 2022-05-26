@@ -31,7 +31,7 @@ processing and deep learning algorithms. I'd specifically love to work on
 scientific subjects, involving me to practice and improve my math and physic skills.
 
 You can find my latest resume at [this
-permalink](https://bit.ly/romain-hermary-cv). The links to
+permalink](https://hermary.eu/cv). The links to
 my LinkedIn, e-mail, etc. are at the bottom of the sidebar.
 
 ## This Site
