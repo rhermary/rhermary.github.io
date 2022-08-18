@@ -8,10 +8,10 @@ layout: default
   {% if page.layout == 'page' or page.collection == 'tabs' %}
     {% assign tab_key = page.title | downcase %}
     {% assign title = site.data.locales[lang].tabs[tab_key] | default: page.title %}
-    <h1 class="dynamic-title">
+    <h1 class="dynamic-title" align="center" id="other_big_title">
       {{ title }}
     </h1>
-    <div class="content">
+    <div class="content" style="margin-top: 1rem">
       {{ content }}
     </div>
   {% else %}

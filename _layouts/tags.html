@@ -3,8 +3,32 @@ layout: page
 # All the Tags of posts.
 ---
 
+<style>
+  #other_big_title {
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    font-size: 2.5rem;
+    font-variant-caps: small-caps;
+  }
+  #big_description {
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+    border: 1px solid var(--btn-border-color);
+    border-radius: 0.8rem;
+    padding: 0.5rem 1rem 0.2rem 1rem;
+    background: var(--pin-bg);
+  }
+</style>
+
+<div id="big_description">
+    <p align="justify">
+     {{ site.tab_desc["tags"] }}
+    </p>
+</div>
+
+
 <div id="tags" class="d-flex flex-wrap mx-xl-2">
-  {% assign tags = '' | split: '' %}
+  {% assign tags = "" | split: "" %}
   {% for t in site.tags %}
     {% assign tags = tags | push: t[0] %}
   {% endfor %}
