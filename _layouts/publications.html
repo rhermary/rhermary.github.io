@@ -1,0 +1,124 @@
+---
+layout: page
+# The Home page layout
+---
+
+{% include lang.html %}
+
+<style>
+  #other_big_title {
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    font-size: 2.5rem;
+    font-variant-caps: small-caps;
+  }
+  #big_description {
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+    border: 1px solid var(--btn-border-color);
+    border-radius: 0.8rem;
+    padding: 0.5rem 1rem 0.2rem 1rem;
+    background: var(--pin-bg);
+  }
+</style>
+
+<script>
+    function copyToClipboard(text) {
+      const elem = document.createElement('textarea');
+      elem.value = text; 
+      document.body.appendChild(elem);
+      elem.select();
+      document.execCommand('copy');
+      document.body.removeChild(elem);
+    }
+</script>
+
+<div id="big_description">
+    <p align="justify">
+     {{ site.tab_desc["publications"] }}
+    </p>
+</div>
+
+<div id="post-list">
+
+{% assign publications = site.data.publications | sort: 'date' | reverse %}
+
+{% for post in publications %}
+  <div class="post-preview">
+    <h1 style="text-align: left">
+      <a href="{{ post.url }}" style="border-bottom: none;">{{ post.title }}</a>
+    </h1>
+
+    <div class="post-content" style="margin-top: 0.2rem; font-style: italic">
+        {% if post.conf %}
+      <p style="font-style: italic">
+          {{ post.conf }}
+      </p>
+        {% endif %}
+        {% if post.tldr %}
+      <p style="line-height: 1rem; padding: 2px; color: var(--mask-bg);margin-top: 0.2rem">
+          {% include no-linenos.html content=post.content %}
+          {{ post.tldr | markdownify | strip_html | truncate: 200 }}
+      </p>
+        {% endif %}
+    </div>
+
+    <div class="post-meta text-muted d-flex justify-content-between">
+
+      <div>
+        <!-- posted date -->
+        <i class="far fa-calendar fa-fw"></i>
+        {% include timeago.html date=post.date tooltip=true %}
+
+        {% if post.type %}
+        <i class="fas fa-feather-pointed fa-fw"></i>
+        <span>
+            {{ site.data.locales[lang].post.type[post.type] }}
+        </span>
+        {% endif %}
+
+
+        <!-- page views -->
+        {% if site.google_analytics.pv.proxy_endpoint or site.google_analytics.pv.cache_path %}
+        <i class="far fa-eye fa-fw"></i>
+        <span id="pv_{{-post.title-}}" class="pageviews">
+          <i class="fas fa-spinner fa-spin fa-fw"></i>
+        </span>
+        {% endif %}
+
+      </div>
+
+      <div style="display: flex">
+      {% if post.published %}
+      <button class="cite text-muted" onclick="copyToClipboard('{{ post.cite}}')">
+          <i class="fas fa-quote-right fa-fw"></i>
+            {{ site.data.locales[lang].post.cite }}
+      </button>
+      <div class="pin">
+        <i class="fas fa-circle-check fa-fw" style="transform: rotate(0)"></i>
+        <span>{{ site.data.locales[lang].post.published_prompt }}</span>
+      </div>
+      {% elsif post.submitted %}
+      <div class="pin">
+        <i class="fas fa-spinner fa-fw" style="transform: rotate(0)"></i>
+        <span>{{ site.data.locales[lang].post.submitted_prompt }}</span>
+      </div>
+      {% else %}
+      <div class="pin">
+      <i class="fas fa-pen-nib fa-fw" style="transform: rotate(0)"></i>
+      <span data-placement="bottom">
+          {{ site.data.locales[lang].post.not_to_publish }}
+      </span>
+      </div>
+      {% else %}
+      {% endif %}
+      </div>
+
+
+    </div> <!-- .post-meta -->
+
+  </div> <!-- .post-review -->
+
+{% endfor %}
+
+</div> <!-- #post-list -->

@@ -1,0 +1,56 @@
+- title: "Learning Grayscale Mathematical Morphology with Smooth Morphological \
+Layers"
+  date: 14-05-2022
+  url: "https://link.springer.com/article/10.1007/s10851-022-01091-1"
+  published: true
+  submitted: true
+  cite: |
+    @article{Hermary2022LearningGM,\n\
+        title={Learning Grayscale Mathematical Morphology with Smooth\
+     Morphological Layers},\n\
+        author={Romain Hermary and Guillaume Tochon and {\'E}lodie Puybareau\
+     and Alexandre Kirszenberg and Jes{\'u}s Angulo},\n\
+        journal={Journal of Mathematical Imaging and Vision},\n\
+        year={2022}\n\
+    }\n\
+  conf: "Journal of Mathematical Imaging and Vision (2022), \
+DOI: 10.1007/s10851-022-01091-1"
+  type: "journal"
+  tldr: "Two novel morphological layers based on the same principle as the
+  p-convolution are proposed, while circumventing its principal drawbacks, and
+  their capacity to efficiently learn grayscale morphological operators while
+  raising several edge cases is showcased"
+
+- title: "Integration of Morphological Operators in Neural Networks"
+  date: 01-07-2021
+  type: "report"
+  tldr: "Image processing is a very broad field of study that encompasses a
+multitude of operations, each of them
+with different purposes and circumstances of use, complexities and results.
+Nowadays, the bests results
+for automatic image study (image segmentation, image classification, object
+        detection, etc.) are obtained
+using deep learning, and more specifically convolutional neural networks. We
+explore and conduct experiments on a specific part of image processing,
+mathematical morphology, investigating on the best way of
+circumventing operations’ complexities regarding their integration in a
+supervised learning pipeline.
+"
+  url: "https://drive.google.com/uc?print=false&id=1GqVAI1DSiunpKERzUIomnSH4sxw9VmBS"
+  conf: "EPITA Research and Development Laboratory (LRDE)"
+
+- title: "Survey on Convolutional Neural Networks and Pooling Strategies"
+  date: 05-07-2021
+  tldr: "When talking about object detection, image analysis, image
+classification and
+essentially every algorithm that tries to apply the conveniences of deep
+learning and back-propagation in signal related fields, Convolutional Neural
+Networks (CNN) appear to be the best contenders. Throughout the years, many
+variants were proposed with architectures and layer arrangements very peculiar
+and different, but also diverse pooling/sub-sampling methods, which
+CNNs heavily rely on to increase invariance to distortions and have a broader
+feature detection. In this paper, we overview the structure of Neural Networks
+and Convolutional Neural Networks, review the existing approaches of
+pooling layers and present possible future directions."
+  url: "https://drive.google.com/uc?print=false&id=1jGCOvLJXTtxDPWIV_MY6Q4n0vQjAuAaQ"
+  conf: "EPITA Research and Development Laboratory (LRDE)"
