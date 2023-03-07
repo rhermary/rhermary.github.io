@@ -1,6 +1,6 @@
 ---
 title: Paper Presentation - Neural Ordinary Differential Equations
-categories: [Research, Lectures & Work]
+categories: [Research, Lectures Assignments & Work]
 tags: [RDI, LRDE, CODER]
 ---
 
