@@ -225,7 +225,21 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
-
+tab_desc:
+  home: "Welcome to my website! On this first page you will find a complete
+  list of all the content I posted. Just below this description, you will find
+  articles I currently want to put forward."
+  about: "In this section, you will find details about me and my work in
+  general. You might also see subsections describing my actual work situtation
+  and/or whatever I want to share!"
+  categories: "Posts or organized in categories, I try to make it as simple and
+  clean as possible. Click on the section you are interested in to see a list of
+  all the articles."
+  tags: "Tags are attached to all the written articles, this could help you find
+  easily the ones about the same topic."
+  archives: "A stacked view, sorted by publication date, of the articles from
+  this website. As always, you can click on the title to read further. You can
+  deduce I have not been very active lately, but I will try to write more often."
 
 category_desc:
   seminar: "Seminars are meetings between LRDE researchers where we all present

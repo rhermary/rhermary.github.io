@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 {% include lang.html %}
 
 <article class="px-1">
@@ -11,6 +10,11 @@ layout: default
     <h1 class="dynamic-title">
       {{ title }}
     </h1>
+    <div class="tab-description">
+      <p>
+        {{ site.tab_desc[tab_key] }}
+      </p>
+    </div>
     <div class="content">
       {{ content }}
     </div>

@@ -2,14 +2,12 @@
 layout: page
 # All the Categories of posts
 ---
-
 {% include lang.html %}
 
 {% assign HEAD_PREFIX = 'h_' %}
 {% assign LIST_PREFIX = 'l_' %}
 
 {% assign group_index = 0 %}
-
 
 {% assign sort_categories = site.categories | sort %}
 {% for category in sort_categories %}

@@ -47,6 +47,12 @@ body {
 }
 
 h1.dynamic-title {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  font-variant-caps: small-caps;
+
   @include bp.lt(bp.get(lg)) {
     display: none;
 
@@ -54,6 +60,16 @@ h1.dynamic-title {
       margin-top: 2.5rem;
     }
   }
+}
+
+.tab-description {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  border: 1px solid var(--btn-border-color);
+  border-radius: 0.8rem;
+  padding: 0.5rem 1rem 0.2rem 1rem;
+  background: var(--pin-bg);
+  text-align: justify;
 }
 
 main {
@@ -131,7 +147,7 @@ main {
 
 .content {
   font-size: 1.08rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   overflow-wrap: break-word;
   text-align: justify;
 

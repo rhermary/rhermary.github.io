@@ -99,6 +99,7 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
     @extend %sidebar-link-hover;
 
     font-family: inherit;
+    font-variant-caps: small-caps;
     font-weight: 900;
     font-size: 1.75rem;
     line-height: 1.2;
