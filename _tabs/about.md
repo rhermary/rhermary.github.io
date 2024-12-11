@@ -5,9 +5,9 @@ title: About
 icon: fas fa-info-circle
 order: 0
 ---
-
+<p align="center">
 <img src="/assets/img/profile-pic.png" style="height: 300px">
-
+</p>
 # Hi, I am Romain
 
 Currently, I am starting my PhD Studies in the ___Computer Vision, Imaging & Machine
@@ -56,6 +56,6 @@ contact me if you have any suggestions or questions about a topic.
 See my latest --and for now only-- [article]({% post_url 2021-09-20-jmiv %})
 (**Learning Grayscale Mathematical Morphology with Smooth Morphological Layers**)
 that I submitted to the [Journal of Mathematical Imaging and Vision](https://www.springer.com/journal/10851)
-in July 2021; it was accepted and published in May 2022, and can be find on the
+in July 2021; it was accepted and published in May 2022, and can be found on the
 [Springer Nature](https://link.springer.com/article/10.1007/s10851-022-01091-1?error=cookies_not_supported&code=1a3cd712-4a95-43eb-87c6-5e20380959b0)
 website.

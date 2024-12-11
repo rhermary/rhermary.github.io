@@ -70,16 +70,16 @@ post:
     share_link:
       title: Copy link
       succeed: Link copied successfully!
-  # pinned prompt of posts list on homepage
-  pin_prompt: Pinned
   published_prompt: Published
   submitted_prompt: Submitted
   not_to_publish: Not To Be Published
   cite: Cite
+  link: Link
+  pin_prompt: Pinned
   type:
-      journal: Journal
-      conference: Conference
-      report: Report
+    journal: Journal
+    conference: Conference
+    report: Report
 
 # Date time format.
 # See: <http://strftime.net/>, <https://day.js.org/docs/en/display/format>

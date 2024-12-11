@@ -34,91 +34,91 @@ layout: page
 </script>
 
 <div id="big_description">
-    <p align="justify">
+    <p style="text-align: justify">
      {{ site.tab_desc["publications"] }}
     </p>
 </div>
 
-<div id="post-list">
-
 {% assign publications = site.data.publications | sort: 'date' | reverse %}
 
-{% for post in publications %}
-  <div class="post-preview">
-    <h1 style="text-align: left">
-      <a href="{{ post.url }}" style="border-bottom: none;">{{ post.title }}</a>
-    </h1>
+<div id="post-list" class="flex-grow-1 px-xl-1">
 
-    <div class="post-content" style="margin-top: 0.2rem; font-style: italic">
-        {% if post.conf %}
-      <p style="font-style: italic">
-          {{ post.conf }}
-      </p>
-        {% endif %}
-        {% if post.tldr %}
-      <p style="line-height: 1rem; padding: 2px; color: var(--mask-bg);margin-top: 0.2rem">
-          {% include no-linenos.html content=post.content %}
-          {{ post.tldr | markdownify | strip_html | truncate: 200 }}
-      </p>
-        {% endif %}
-    </div>
+  {% for publication in publications %}
+          
+    <article class="card-wrapper card">
+      <div class="publication-preview row g-0 flex-md-row-reverse">
+             
+        {% assign card_body_col = '12' %}
 
-    <div class="post-meta text-muted d-flex justify-content-between">
+        <div class="col-md-{{ card_body_col }}">
+          <div class="card-body">
+            <h1 class="card-title2 my-2 mt-md-0">
+                {{ publication.title }}
+              </h1>
 
-      <div>
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        {% include timeago.html date=post.date tooltip=true %}
+            <div class="card-text content mt-0 mb-3">
+              {% if publication.conf %}
+                <p> {{ publication.conf }} </p>
+              {% endif %}
+              {% if publication.tldr %}
+                <p class="tldr" style="line-height: 1rem; padding: 2px; margin-top: 0.2rem">
+                  {% include no-linenos.html content=publication.content %}
+                  {{ publication.tldr | markdownify | strip_html | truncate: 400 }}
+                </p>
+              {% endif %}
+            </div>
 
-        {% if post.type %}
-        <i class="fas fa-feather-pointed fa-fw"></i>
-        <span>
-            {{ site.data.locales[lang].post.type[post.type] }}
-        </span>
-        {% endif %}
+            <div class="post-meta flex-grow-1 d-flex align-items-end">
+              <div class="me-auto">
+                <!-- posted date -->
+                <i class="far fa-calendar fa-fw me-1"></i>
+                {% include datetime.html date=publication.date lang=lang %}
 
+              </div>
 
-        <!-- page views -->
-        {% if site.google_analytics.pv.proxy_endpoint or site.google_analytics.pv.cache_path %}
-        <i class="far fa-eye fa-fw"></i>
-        <span id="pv_{{-post.title-}}" class="pageviews">
-          <i class="fas fa-spinner fa-spin fa-fw"></i>
-        </span>
-        {% endif %}
-
+              <div style="display: flex">
+                  <a href="{{ publication.url }}" style="text-decoration: none; border-bottom: none;">
+                    <button class="cite text-muted" >
+                      <i class="fas fa-link fa-fw"></i>
+                      {{ site.data.locales[lang].post.link }}
+                    </button>
+                </a>
+                {% if publication.published %}
+                <button class="cite text-muted" onclick="copyToClipboard('{{post.cite}}')">
+                    <i class="fas fa-quote-right fa-fw"></i>
+                      {{ site.data.locales[lang].post.cite }}
+                </button>
+                <div class="pin">
+                  <i class="fas fa-circle-check fa-fw" style="transform: rotate(0)"></i>
+                  <span>{{ site.data.locales[lang].post.published_prompt }}</span>
+                </div>
+                {% elsif publication.submitted %}
+                <div class="pin">
+                  <i class="fas fa-spinner fa-fw" style="transform: rotate(0)"></i>
+                  <span>{{ site.data.locales[lang].post.submitted_prompt }}</span>
+                </div>
+                {% else %}
+                <div class="pin">
+                <i class="fas fa-pen-nib fa-fw" style="transform: rotate(0)"></i>
+                <span data-placement="bottom">
+                    {{ site.data.locales[lang].post.not_to_publish }}
+                </span>
+                </div>
+                {% else %}
+                {% endif %}
+                </div>
+            </div>
+            <!-- .post-meta -->
+          </div>
+          <!-- .card-body -->
+        </div>
       </div>
+    </article>
+    
+  {% endfor %}
+</div>
+<!-- #post-list -->
 
-      <div style="display: flex">
-      {% if post.published %}
-      <button class="cite text-muted" onclick="copyToClipboard('{{ post.cite}}')">
-          <i class="fas fa-quote-right fa-fw"></i>
-            {{ site.data.locales[lang].post.cite }}
-      </button>
-      <div class="pin">
-        <i class="fas fa-circle-check fa-fw" style="transform: rotate(0)"></i>
-        <span>{{ site.data.locales[lang].post.published_prompt }}</span>
-      </div>
-      {% elsif post.submitted %}
-      <div class="pin">
-        <i class="fas fa-spinner fa-fw" style="transform: rotate(0)"></i>
-        <span>{{ site.data.locales[lang].post.submitted_prompt }}</span>
-      </div>
-      {% else %}
-      <div class="pin">
-      <i class="fas fa-pen-nib fa-fw" style="transform: rotate(0)"></i>
-      <span data-placement="bottom">
-          {{ site.data.locales[lang].post.not_to_publish }}
-      </span>
-      </div>
-      {% else %}
-      {% endif %}
-      </div>
-
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-{% endfor %}
-
-</div> <!-- #post-list -->
+{% if paginator.total_pages > 1 %}
+  {% include post-paginator.html %}
+{% endif %}
