@@ -240,6 +240,9 @@ tab_desc:
   archives: "A stacked view, sorted by publication date, of the articles from
   this website. As always, you can click on the title to read further. You can
   deduce I have not been very active lately, but I will try to write more often."
+  publications: "You will find here the list of scientific articles, reports and
+  surveys I wrote. Not everything was ment to be an article to be reviewed and published,
+  there are exercises, technical reports and personal thoughts on subjects."
 
 category_desc:
   seminar: "Seminars are meetings between LRDE researchers where we all present
