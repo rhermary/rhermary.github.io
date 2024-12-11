@@ -1,64 +1,40 @@
 ---
-layout: page
-# The Home page layout
+layout: titled-default
+refactor: true
 ---
-
 {% include lang.html %}
 
-<style>
-  #other_big_title {
-    margin-top: 2rem;
-    margin-bottom: 0rem;
-    font-size: 2.5rem;
-    font-variant-caps: small-caps;
-  }
-  #big_description {
-    margin-top: 0rem;
-    margin-bottom: 3rem;
-    border: 1px solid var(--btn-border-color);
-    border-radius: 0.8rem;
-    padding: 0.5rem 1rem 0.2rem 1rem;
-    background: var(--pin-bg);
-  }
-</style>
+{% comment %} <link rel="stylesheet" href="../_sass/layout/publications.css"> {% endcomment %}
 
 <script>
-    function copyToClipboard(text) {
-      const elem = document.createElement('textarea');
-      elem.value = text; 
-      document.body.appendChild(elem);
-      elem.select();
-      document.execCommand('copy');
-      document.body.removeChild(elem);
-    }
+  function copyToClipboard(text) {
+    console.log('ASD');
+    const elem = document.createElement('textarea');
+    elem.value = text;
+    document.body.appendChild(elem);
+    elem.select();
+    document.execCommand('copy');
+    document.body.removeChild(elem);
+  }
 </script>
-
-<div id="big_description">
-    <p style="text-align: justify">
-     {{ site.tab_desc["publications"] }}
-    </p>
-</div>
 
 {% assign publications = site.data.publications | sort: 'date' | reverse %}
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
-
   {% for publication in publications %}
-          
     <article class="card-wrapper card">
       <div class="publication-preview row g-0 flex-md-row-reverse">
-             
         {% assign card_body_col = '12' %}
 
         <div class="col-md-{{ card_body_col }}">
           <div class="card-body">
             <h1 class="card-title2 my-2 mt-md-0">
-                {{ publication.title }}
-              </h1>
+              {{ publication.title }}
+            </h1>
 
             <div class="card-text content mt-0 mb-3">
               {% if publication.conf %}
-                <p> {{ publication.conf }} </p>
+                <p>{{ publication.conf }}</p>
               {% endif %}
               {% if publication.tldr %}
                 <p class="tldr" style="line-height: 1rem; padding: 2px; margin-top: 0.2rem">
@@ -73,40 +49,48 @@ layout: page
                 <!-- posted date -->
                 <i class="far fa-calendar fa-fw me-1"></i>
                 {% include datetime.html date=publication.date lang=lang %}
-
               </div>
 
               <div style="display: flex">
+                {% if publication.pdflink %}
+                  <a href="{{ publication.pdflink }}" style="text-decoration: none; border-bottom: none;">
+                    <button class="cite text-muted">
+                      <i class="fas fa-file-pdf fa-fw"></i>
+                      PDF
+                    </button>
+                  </a>
+                {% endif %}
+                {% if publication.url %}
                   <a href="{{ publication.url }}" style="text-decoration: none; border-bottom: none;">
-                    <button class="cite text-muted" >
+                    <button class="cite text-muted">
                       <i class="fas fa-link fa-fw"></i>
                       {{ site.data.locales[lang].post.link }}
                     </button>
-                </a>
-                {% if publication.published %}
-                <button class="cite text-muted" onclick="copyToClipboard('{{post.cite}}')">
-                    <i class="fas fa-quote-right fa-fw"></i>
-                      {{ site.data.locales[lang].post.cite }}
-                </button>
-                <div class="pin">
-                  <i class="fas fa-circle-check fa-fw" style="transform: rotate(0)"></i>
-                  <span>{{ site.data.locales[lang].post.published_prompt }}</span>
-                </div>
-                {% elsif publication.submitted %}
-                <div class="pin">
-                  <i class="fas fa-spinner fa-fw" style="transform: rotate(0)"></i>
-                  <span>{{ site.data.locales[lang].post.submitted_prompt }}</span>
-                </div>
-                {% else %}
-                <div class="pin">
-                <i class="fas fa-pen-nib fa-fw" style="transform: rotate(0)"></i>
-                <span data-placement="bottom">
-                    {{ site.data.locales[lang].post.not_to_publish }}
-                </span>
-                </div>
-                {% else %}
+                  </a>
                 {% endif %}
-                </div>
+                {% if publication.published %}
+                  <button class="cite text-muted" onclick="copyToClipboard('{{post.cite}}')">
+                    <i class="fas fa-quote-right fa-fw"></i>
+                    {{ site.data.locales[lang].post.cite }}
+                  </button>
+                  <div class="pin">
+                    <i class="fas fa-circle-check fa-fw" style="transform: rotate(0)"></i>
+                    <span>{{ site.data.locales[lang].post.published_prompt }}</span>
+                  </div>
+                {% elsif publication.submitted %}
+                  <div class="pin">
+                    <i class="fas fa-spinner fa-fw" style="transform: rotate(0)"></i>
+                    <span>{{ site.data.locales[lang].post.submitted_prompt }}</span>
+                  </div>
+                {% else %}
+                  <div class="pin">
+                    <i class="fas fa-pen-nib fa-fw" style="transform: rotate(0)"></i>
+                    <span data-placement="bottom">
+                      {{ site.data.locales[lang].post.not_to_publish }}
+                    </span>
+                  </div>
+                {% endif %}
+              </div>
             </div>
             <!-- .post-meta -->
           </div>
@@ -114,7 +98,6 @@ layout: page
         </div>
       </div>
     </article>
-    
   {% endfor %}
 </div>
 <!-- #post-list -->

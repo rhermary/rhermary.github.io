@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{% include lang.html %}
+
+{% assign tab_key = page.title | default: 'home' | downcase %}
+
+<h1 class="dynamic-title">{{ tab_key | capitalize }}</h1>
+<div class="tab-description">
+  <p>
+    {{ site.tab_desc[tab_key] }}
+  </p>
+</div>
+
+{{ content }}

@@ -1,18 +1,11 @@
 ---
-layout: default
+layout: titled-default
 refactor: true
 ---
 {% include lang.html %}
 
 {% assign all_pinned = site.posts | where: 'pin', 'true' %}
 {% assign all_normal = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
-
-<h1 class="dynamic-title">Home</h1>
-<div class="tab-description">
-  <p>
-    {{ site.tab_desc.home }}
-  </p>
-</div>
 
 {% assign posts = '' | split: '' %}
 

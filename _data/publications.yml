@@ -2,6 +2,7 @@
 Layers"
   date: 14-05-2022
   url: "https://link.springer.com/article/10.1007/s10851-022-01091-1"
+  pdflink: "https://link.springer.com/article/10.1007/s10851-022-01091-1"
   published: true
   submitted: true
   cite: |
@@ -36,7 +37,7 @@ mathematical morphology, investigating on the best way of
 circumventing operations’ complexities regarding their integration in a
 supervised learning pipeline.
 "
-  url: "https://drive.google.com/uc?print=false&id=1GqVAI1DSiunpKERzUIomnSH4sxw9VmBS"
+  pdflink: "https://drive.google.com/uc?print=false&id=1GqVAI1DSiunpKERzUIomnSH4sxw9VmBS"
   conf: "EPITA Research and Development Laboratory (LRDE)"
 
 - title: "Survey on Convolutional Neural Networks and Pooling Strategies"
@@ -52,5 +53,5 @@ CNNs heavily rely on to increase invariance to distortions and have a broader
 feature detection. In this paper, we overview the structure of Neural Networks
 and Convolutional Neural Networks, review the existing approaches of
 pooling layers and present possible future directions."
-  url: "https://drive.google.com/uc?print=false&id=1jGCOvLJXTtxDPWIV_MY6Q4n0vQjAuAaQ"
+  pdflink: "https://drive.google.com/uc?print=false&id=1jGCOvLJXTtxDPWIV_MY6Q4n0vQjAuAaQ"
   conf: "EPITA Research and Development Laboratory (LRDE)"

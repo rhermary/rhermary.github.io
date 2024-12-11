@@ -72,7 +72,7 @@ post:
       succeed: Link copied successfully!
   published_prompt: Published
   submitted_prompt: Submitted
-  not_to_publish: Not To Be Published
+  not_to_publish: Unpublished
   cite: Cite
   link: Link
   pin_prompt: Pinned
