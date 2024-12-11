@@ -37,7 +37,7 @@ mathematical morphology, investigating on the best way of
 circumventing operations’ complexities regarding their integration in a
 supervised learning pipeline.
 "
-  pdflink: "https://drive.google.com/uc?print=false&id=1GqVAI1DSiunpKERzUIomnSH4sxw9VmBS"
+  pdflink: "/static/pdfs/2122.pdf"
   conf: "EPITA Research and Development Laboratory (LRDE)"
 
 - title: "Survey on Convolutional Neural Networks and Pooling Strategies"

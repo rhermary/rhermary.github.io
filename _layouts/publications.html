@@ -4,11 +4,8 @@ refactor: true
 ---
 {% include lang.html %}
 
-{% comment %} <link rel="stylesheet" href="../_sass/layout/publications.css"> {% endcomment %}
-
 <script>
   function copyToClipboard(text) {
-    console.log('ASD');
     const elem = document.createElement('textarea');
     elem.value = text;
     document.body.appendChild(elem);
@@ -24,25 +21,29 @@ refactor: true
   {% for publication in publications %}
     <article class="card-wrapper card">
       <div class="publication-preview row g-0 flex-md-row-reverse">
-        {% assign card_body_col = '12' %}
-
         <div class="col-md-{{ card_body_col }}">
           <div class="card-body">
-            <h1 class="card-title2 my-2 mt-md-0">
-              {{ publication.title }}
-            </h1>
+            <a
+              class="link-on-hidden"
+              href="{{ publication.pdflink }}"
+            >
+              {% assign card_body_col = '12' %}
+              <h1 class="card-title2 my-2 mt-md-0">
+                {{ publication.title }}
+              </h1>
 
-            <div class="card-text content mt-0 mb-3">
-              {% if publication.conf %}
-                <p>{{ publication.conf }}</p>
-              {% endif %}
-              {% if publication.tldr %}
-                <p class="tldr" style="line-height: 1rem; padding: 2px; margin-top: 0.2rem">
-                  {% include no-linenos.html content=publication.content %}
-                  {{ publication.tldr | markdownify | strip_html | truncate: 400 }}
-                </p>
-              {% endif %}
-            </div>
+              <div class="card-text content mt-0 mb-3">
+                {% if publication.conf %}
+                  <p>{{ publication.conf }}</p>
+                {% endif %}
+                {% if publication.tldr %}
+                  <p class="tldr" style="line-height: 1rem; padding: 2px; margin-top: 0.2rem">
+                    {% include no-linenos.html content=publication.content %}
+                    {{ publication.tldr | markdownify | strip_html | truncate: 400 }}
+                  </p>
+                {% endif %}
+              </div>
+            </a>
 
             <div class="post-meta flex-grow-1 d-flex align-items-end">
               <div class="me-auto">
@@ -52,22 +53,25 @@ refactor: true
               </div>
 
               <div style="display: flex">
-                {% if publication.pdflink %}
-                  <a href="{{ publication.pdflink }}" style="text-decoration: none; border-bottom: none;">
-                    <button class="cite text-muted">
-                      <i class="fas fa-file-pdf fa-fw"></i>
-                      PDF
-                    </button>
-                  </a>
-                {% endif %}
-                {% if publication.url %}
-                  <a href="{{ publication.url }}" style="text-decoration: none; border-bottom: none;">
-                    <button class="cite text-muted">
-                      <i class="fas fa-link fa-fw"></i>
-                      {{ site.data.locales[lang].post.link }}
-                    </button>
-                  </a>
-                {% endif %}
+                <div id="buttons">
+                  {% if publication.pdflink %}
+                    <a href="{{ publication.pdflink }}" style="text-decoration: none; border-bottom: none;">
+                      <button class="cite text-muted">
+                        <i class="fas fa-file-pdf fa-fw"></i>
+                        PDF
+                      </button>
+                    </a>
+                  {% endif %}
+                  {% if publication.url %}
+                    <a href="{{ publication.url }}" style="text-decoration: none; border-bottom: none;">
+                      <button class="cite text-muted">
+                        <i class="fas fa-link fa-fw"></i>
+                        {{ site.data.locales[lang].post.link }}
+                      </button>
+                    </a>
+                  {% endif %}
+                </div>
+
                 {% if publication.published %}
                   <button class="cite text-muted" onclick="copyToClipboard('{{post.cite}}')">
                     <i class="fas fa-quote-right fa-fw"></i>
