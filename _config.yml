@@ -9,40 +9,40 @@ theme: jekyll-theme-chirpy
 lang: en
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone: Asia/Shanghai
+timezone: Europe/Paris
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: Romain Hermary # the main title
 
 tagline: PhD Student at Luxembourg University # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Engineer in Computer Sciences and PhD student at Luxembourg University, my specialisations are in computer vision, deep learning and anomaly detection.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://rhermary.github.io"
 
 github:
-  username: github_username # change to your GitHub username
+  username: rhermary # change to your GitHub username
 
-twitter:
-  username: twitter_username # change to your Twitter username
+# twitter:
+#   username: twitter_username # change to your Twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: Romain Hermary
+  email: romain.hermary@uni.lu # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
+    # - https://twitter.com/username # change to your Twitter homepage
+    - https://github.com/rhermary # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/romain-hermary
 
 # Site Verification Settings
 webmaster_verifications:
@@ -88,17 +88,17 @@ pageviews:
 #     light — Use the light color scheme
 #     dark — Use the dark color scheme
 #
-theme_mode: # [light | dark]
+theme_mode: dark # [light | dark]
 
 # The CDN endpoint for media resources.
 # Notice that once it is assigned, the CDN url
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn: "https://chirpy-img.netlify.app"
+cdn: "/"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/commons/avatar.jpg"
+avatar: "/assets/img/favicons/android-chrome-512x512.png"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -226,9 +226,9 @@ jekyll-archives:
     category: /categories/:name/
 
 tab_desc:
-  home: "Welcome to my website! On this first page you will find a complete
-  list of all the content I posted. Just below this description, you will find
-  articles I currently want to put forward."
+  home: "On this home page you will find a complete list of all the content I
+  posted. Just below this description, you will find articles I currently want
+  to put forward."
   about: "In this section, you will find details about me and my work in
   general. You might also see subsections describing my actual work situtation
   and/or whatever I want to share!"
@@ -258,3 +258,7 @@ category_desc:
   research: "All that concerns my research subject and its advancements, aside
   from presentations"
   image: "IMAGE is the name of my major curriculum at EPITA"
+
+adobeAPI:
+  prod: 34e4944193944506a1e574c82f383a17
+  dev: 4bd7776fa62b4450882ccf631339fb20

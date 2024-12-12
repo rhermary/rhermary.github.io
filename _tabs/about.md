@@ -8,7 +8,6 @@ order: 0
 <p align="center">
 <img src="/assets/img/profile-pic.png" style="height: 300px">
 </p>
-# Hi, I am Romain
 
 Currently, I am starting my PhD Studies in the ___Computer Vision, Imaging & Machine
 Intelligence Research Group___ ([CVI²](https://cvi2.uni.lu/)), of the **University of
