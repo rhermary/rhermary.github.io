@@ -70,13 +70,15 @@ refactor: true
                       </button>
                     </a>
                   {% endif %}
+                  {% if publication.published %}
+                    <button class="cite text-muted" onclick="copyToClipboard('{{post.cite}}')">
+                      <i class="fas fa-quote-right fa-fw"></i>
+                      {{ site.data.locales[lang].post.cite }}
+                    </button>
+                  {% endif %}
                 </div>
 
                 {% if publication.published %}
-                  <button class="cite text-muted" onclick="copyToClipboard('{{post.cite}}')">
-                    <i class="fas fa-quote-right fa-fw"></i>
-                    {{ site.data.locales[lang].post.cite }}
-                  </button>
                   <div class="pin">
                     <i class="fas fa-circle-check fa-fw" style="transform: rotate(0)"></i>
                     <span>{{ site.data.locales[lang].post.published_prompt }}</span>
