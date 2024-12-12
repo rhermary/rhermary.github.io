@@ -44,10 +44,6 @@
   }
 }
 
-.link-on-hidden {
-  pointer-events: none;
-}
-
 .tldr {
   color: var(--mask-bg);
 }
@@ -253,10 +249,6 @@
         display: none;
       }
     }
-  }
-
-  .link-on-hidden {
-    pointer-events: all;
   }
 }
 

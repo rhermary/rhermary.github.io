@@ -171,7 +171,7 @@ collections:
     output: true
     sort_by: order
   publications:
-    output: false
+    output: true
 
 defaults:
   - scope:
@@ -194,7 +194,16 @@ defaults:
     values:
       layout: page
       permalink: /:title/
-
+  - scope:
+      path: "" # An empty string here means all files in the project
+      type: publications
+    values:
+      layout: publication
+      comments: true # Enable comments in posts.
+      toc: true # Display TOC column in posts.
+      # DO NOT modify the following parameter unless you are confident enough
+      # to update the code of all other post links in this project.
+      permalink: /publications/:title/
 sass:
   style: compressed
 
@@ -226,6 +235,7 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+    publications: /publications/:name/
 
 tab_desc:
   home: "On this home page you will find a complete list of all the content I

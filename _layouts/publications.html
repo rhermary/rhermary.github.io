@@ -23,10 +23,7 @@ refactor: true
       <div class="publication-preview row g-0 flex-md-row-reverse">
         <div class="col-md-{{ card_body_col }}">
           <div class="card-body">
-            <a
-              class="link-on-hidden"
-              href="{{ publication.pdflink }}"
-            >
+            <a href="{{ publication.url }}">
               {% assign card_body_col = '12' %}
               <h1 class="card-title2 my-2 mt-md-0">
                 {{ publication.title }}
@@ -62,8 +59,8 @@ refactor: true
                       </button>
                     </a>
                   {% endif %}
-                  {% if publication.url %}
-                    <a href="{{ publication.url }}" style="text-decoration: none; border-bottom: none;">
+                  {% if publication.puburl %}
+                    <a href="{{ publication.puburl }}" style="text-decoration: none; border-bottom: none;">
                       <button class="cite text-muted">
                         <i class="fas fa-link fa-fw"></i>
                         {{ site.data.locales[lang].post.link }}

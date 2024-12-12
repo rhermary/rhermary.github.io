@@ -52,7 +52,7 @@ contact me if you have any suggestions or questions about a topic.
 
 ## Worth Seeing
 
-See my latest --and for now only-- [article]({% post_url 2021-09-20-jmiv %})
+See my latest --and for now only-- [article]({% link _publications/2.md %})
 (**Learning Grayscale Mathematical Morphology with Smooth Morphological Layers**)
 that I submitted to the [Journal of Mathematical Imaging and Vision](https://www.springer.com/journal/10851)
 in July 2021; it was accepted and published in May 2022, and can be found on the
