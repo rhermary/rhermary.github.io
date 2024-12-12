@@ -15,7 +15,7 @@ refactor: true
   }
 </script>
 
-{% assign publications = site.data.publications | sort: 'date' | reverse %}
+{% assign publications = site.publications | sort: 'date' | reverse %}
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for publication in publications %}
