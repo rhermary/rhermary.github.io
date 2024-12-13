@@ -172,6 +172,8 @@ collections:
     sort_by: order
   publications:
     output: true
+  presentations:
+    output: true
 
 defaults:
   - scope:
@@ -195,15 +197,21 @@ defaults:
       layout: page
       permalink: /:title/
   - scope:
-      path: "" # An empty string here means all files in the project
+      path: _publications
       type: publications
     values:
       layout: publication
-      comments: true # Enable comments in posts.
-      toc: true # Display TOC column in posts.
-      # DO NOT modify the following parameter unless you are confident enough
-      # to update the code of all other post links in this project.
+      comments: true
+      toc: true
       permalink: /publications/:title/
+  - scope:
+      path: _presentations
+      type: presentations
+    values:
+      layout: publication
+      comments: true
+      toc: true
+      permalink: /presentations/:title/
 sass:
   style: compressed
 
@@ -238,9 +246,8 @@ jekyll-archives:
     publications: /publications/:name/
 
 tab_desc:
-  home: "On this home page you will find a complete list of all the content I
-  posted. Just below this description, you will find articles I currently want
-  to put forward."
+  home: "On this home page you will find a list of blog posts related to projects
+  and topics of interest."
   about: "In this section, you will find details about me and my work in
   general. You might also see subsections describing my actual work situtation
   and/or whatever I want to share!"
@@ -255,6 +262,8 @@ tab_desc:
   publications: "You will find here the list of scientific articles, reports and
   surveys I wrote. Not everything was ment to be an article to be reviewed and published,
   there are exercises, technical reports and personal thoughts on subjects."
+  presentations: "Slides and details about various presentations I did during my
+  engineering studies and PhD."
 
 category_desc:
   seminar: "Seminars are meetings between LRDE researchers where we all present

@@ -22,6 +22,9 @@
 - type: linkedin
   icon: "fab fa-linkedin" # icons powered by <https://fontawesome.com/>
   url: "https://www.linkedin.com/in/romain-hermary" # Fill with your Linkedin homepage
+- type: strava
+  icon: "fa-brands fa-strava" # icons powered by <https://fontawesome.com/>
+  url: "https://www.strava.com/athletes/124092495" # Fill with your Linkedin homepage
 #
 # - type: stack-overflow
 #   icon: 'fab fa-stack-overflow'
