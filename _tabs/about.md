@@ -6,7 +6,7 @@ icon: fas fa-info-circle
 order: 0
 ---
 <p align="center">
-<img src="/assets/img/profile-pic.png" style="height: 300px">
+<img src="/assets/img/profile-pic.png" style="height: 300px" alt="Profile Picture">
 </p>
 
 <br>
