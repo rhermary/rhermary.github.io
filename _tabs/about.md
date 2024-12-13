@@ -9,6 +9,8 @@ order: 0
 <img src="/assets/img/profile-pic.png" style="height: 300px">
 </p>
 
+<br>
+
 Currently, I am starting my PhD Studies in the ___Computer Vision, Imaging & Machine
 Intelligence Research Group___ ([CVI²](https://cvi2.uni.lu/)), of the **University of
 Luxembourg**. My research will be oriented towards anomaly detection, mostly on
