@@ -68,7 +68,7 @@ refactor: true
                     </a>
                   {% endif %}
                   {% if publication.published %}
-                    <button class="cite text-muted" onclick="copyToClipboard('{{post.cite}}')">
+                    <button class="cite text-muted" onclick="copyToClipboard('{{publication.cite}}')">
                       <i class="fas fa-quote-right fa-fw"></i>
                       {{ site.data.locales[lang].post.cite }}
                     </button>
