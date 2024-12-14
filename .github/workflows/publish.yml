@@ -16,13 +16,29 @@ jobs:
   launch:
     runs-on: ubuntu-latest
     steps:
-      # - run: |
-      #     curl -X POST -H "Accept: application/vnd.github+json" \
-      #       -H "Authorization: Bearer ${{ secrets.GH_PAT }}" \
-      #       https://api.github.com/repos/${{ secrets.BUILDER }}/dispatches \
-      #       -d '{"source":{"branch":"production","path":"/_site"}}'
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          ruby-version: 3.3
+          bundler-cache: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - run: npm install
+      - run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GEM_HOST_API_KEY: ${{ secrets.GEM_HOST_API_KEY }}
+
+      - name: Build site
+        run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: "production"
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "_site${{ steps.pages.outputs.base_path }}"
