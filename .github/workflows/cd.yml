@@ -35,5 +35,5 @@ jobs:
     needs: release
     uses: ./.github/workflows/publish.yml
     secrets:
-      GH_PAT: ${{ secrets.GH_PAT }}
+      GH_PAT: ${{ secrets.GITHUB_TOKEN }}
       BUILDER: ${{ secrets.BUILDER }}
