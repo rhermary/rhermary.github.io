@@ -6,6 +6,8 @@ on:
       - docs
   workflow_call:
     secrets:
+      GH_PAT:
+        required: true
       BUILDER:
         required: true
   workflow_dispatch:
@@ -14,11 +16,8 @@ jobs:
   launch:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger deploy
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
+      - run: |
           curl -X POST -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Authorization: Bearer ${{ secrets.GH_PAT }}" \
             https://api.github.com/repos/${{ secrets.BUILDER }}/dispatches \
-            -d '{"event_type":"deploy", "client_payload":{"branch": "${{ github.ref }}"}}'
+            -d '{"event_type":"deploy", "client_payload":{"branch": "${{ github.ref_name }}"}}'
