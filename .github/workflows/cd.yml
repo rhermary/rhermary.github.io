@@ -4,7 +4,8 @@ on:
   push:
     branches: [production]
     tags-ignore: ["**"]
-
+  workflow_dispatch:
+  
 jobs:
   release:
     if: ${{ ! startsWith(github.event.head_commit.message, 'chore(release)') }}
@@ -35,5 +36,4 @@ jobs:
     needs: release
     uses: ./.github/workflows/publish.yml
     secrets:
-      GH_PAT: ${{ secrets.GH_PAT }}
       BUILDER: ${{ secrets.BUILDER }}
